@@ -12,11 +12,11 @@ sudo apt-get update
 #Step 4 - Install MongoDB
 sudo apt-get install -y mongodb-org
 
+
 #Start mongodb and add it as service to be started at boot time:
 systemctl start mongod
 systemctl enable mongod
 export MONGODB_URL="mongodb://localhost/tododb"
-
 
 
 #Install Nodejs
@@ -29,5 +29,4 @@ sudo git clone https://github.com/evillgenius75/gbb-todo /app
 cd /app
 npm install
 #to be done my user 'npm start'
-
-
+exit 0
